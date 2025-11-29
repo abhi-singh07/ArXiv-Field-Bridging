@@ -35,22 +35,3 @@ This project investigates which types of field bridges lead to higher research i
 | CS-STAT | +55.5% | < 0.001 |
 | CS-MATH | +34.3% | < 0.001 |
 | Within-CS | +3.9% | < 0.001 |
-
-## 📁 Project Structure
-
-ArXiv-Field-Bridging/
-├── src/
-│ ├── analysis/
-│ │ ├── h1_analysis.py # Complete H1 analysis code
-│ │ └── h2_analysis.py # H2 analysis (TODO)
-│ └── preprocessing.py # Data preprocessing
-├── results/
-│ └── H1/
-│ ├── h1_realistic_results.txt # Complete regression output
-│ ├── h1_realistic_findings.json # Key metrics and counts
-│ ├── h1_realistic_results.png # Visualizations
-│ └── authors_h1_realistic.parquet # Analysis dataset
-├── notebooks/
-│ ├── h1_exploration.ipynb # H1 exploratory analysis
-│ └── h2_exploration.ipynb # H2 exploratory analysis (TODO)
-└── README.md
