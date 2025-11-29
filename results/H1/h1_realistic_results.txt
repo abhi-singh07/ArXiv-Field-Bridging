@@ -1,0 +1,43 @@
+H1 ANALYSIS WITH REALISTIC CITATION PATTERNS
+==================================================
+
+Sample size: 440591
+Expected vs Actual Effects:
+- CS-STAT: Expected ~40%, Actual 55.5%
+- CS-MATH: Expected ~20%, Actual 34.3%
+- Within-CS: Expected minimal, Actual 3.9%
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       log_avg_norm_cit   R-squared:                       0.290
+Model:                            OLS   Adj. R-squared:                  0.290
+Method:                 Least Squares   F-statistic:                 1.656e+04
+Date:                Sat, 29 Nov 2025   Prob (F-statistic):               0.00
+Time:                        01:13:55   Log-Likelihood:                -20051.
+No. Observations:              440591   AIC:                         4.012e+04
+Df Residuals:                  440582   BIC:                         4.022e+04
+Df Model:                           8                                         
+Covariance Type:                  HC1                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const                0.0904      0.001     65.078      0.000       0.088       0.093
+career_age          -0.0061      0.000    -47.882      0.000      -0.006      -0.006
+total_pubs          -0.0012   4.54e-05    -27.432      0.000      -0.001      -0.001
+avg_coauthors        0.0024   7.65e-05     31.887      0.000       0.002       0.003
+network_metric       0.2079      0.048      4.352      0.000       0.114       0.301
+shannon_H           -0.0042      0.001     -5.198      0.000      -0.006      -0.003
+bridge_CS-MATH       0.2949      0.002    190.564      0.000       0.292       0.298
+bridge_CS-STAT       0.4416      0.002    270.023      0.000       0.438       0.445
+bridge_within_CS     0.0379      0.001     41.561      0.000       0.036       0.040
+==============================================================================
+Omnibus:                    41831.808   Durbin-Watson:                   1.689
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            71515.464
+Skew:                           0.681   Prob(JB):                         0.00
+Kurtosis:                       4.429   Cond. No.                     3.07e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 3.07e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

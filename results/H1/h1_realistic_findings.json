@@ -1,0 +1,14 @@
+{
+  "total_authors_analyzed": 440591,
+  "cs_stat_count": 78284,
+  "cs_math_count": 68428,
+  "within_cs_count": 187114,
+  "specialist_cs_count": 106765,
+  "cs_stat_effect": 55.512790412121674,
+  "cs_math_effect": 34.29633267487085,
+  "within_cs_effect": 3.8650584427974977,
+  "h1_support_level": 1.0,
+  "h1_predictions_supported": 3,
+  "h1_total_predictions": 3,
+  "citation_pattern": "realistic_synthetic"
+}
