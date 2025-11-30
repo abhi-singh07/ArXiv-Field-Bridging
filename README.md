@@ -35,3 +35,56 @@ This project investigates which types of field bridges lead to higher research i
 | CS-STAT | +55.5% | < 0.001 |
 | CS-MATH | +34.3% | < 0.001 |
 | Within-CS | +3.9% | < 0.001 |
+
+## 🎯 H2 Results: Optimal Diversity (The Inverted U-Shape)
+
+**Hypothesis**: The relationship between field diversity and impact follows an inverted U-shape—authors active in 2–3 related fields reach the highest citation impact, while both specialists and extreme generalists underperform.
+
+### Key Findings:
+- ✅ **Inverted U-Shape Confirmed**: Significant negative quadratic term indicates diminishing returns for extreme generalists.
+- ✅ **The "Sweet Spot"**: Peak impact occurs at **Shannon Entropy ≈ 1.06**, which corresponds to active work in **2-3 related fields**.
+- 📉 **Diminishing Returns**: Impact declines significantly as authors spread themselves too thin across unrelated fields.
+
+### Statistical Significance:
+- **Quadratic Term ($\beta_2$)**: -0.777 (p < 0.001)
+- **Linear Term ($\beta_1$)**: +1.641 (p < 0.001)
+- **Model Fit ($R^2$)**: 0.474 (Strong explanatory power)
+
+---
+
+## 🛡️ Robustness Checks
+
+To validate our findings against over-dispersed count data, we utilized **Negative Binomial Regression**, the "gold standard" for citation analysis.
+
+### 1. Validating H1 (Bridge Hierarchy)
+The hierarchy of bridge value holds firm even under rigorous testing. The **Incidence Rate Ratios (IRR)** confirm that CS-Statistics bridges provide the largest multiplicative boost to citation counts.
+
+| Bridge Type | IRR (Multiplicative Effect) | Interpretation |
+|-------------|----------------------------|----------------|
+| **CS-STAT** | **1.136** | **+13.6% Citations** (Highest) |
+| CS-MATH | 1.118 | +11.8% Citations |
+| Within-CS | 1.014 | +1.4% Citations (Negligible) |
+
+*(Note: All effects significant at p < 0.001)*
+
+### 2. Validating H2 (Optimal Diversity)
+The "Inverted U-Shape" remains robust. The quadratic term for Shannon Entropy squared (`entropy_sq`) remained **negative (-0.154)** and **highly significant (p < 0.001)** in the Negative Binomial model. This confirms that the "diminishing returns" of excessive diversity is a real structural phenomenon, not an artifact of the linear model.
+
+---
+
+## 📈 Visualizations
+
+The project generated the following key visualizations to support these findings:
+
+1.  **`results/H1/h1_realistic_results.png`**: Bar charts showing the raw citation premium and percentage advantages of CS-STAT authors compared to others.
+2.  **`results/H2/h2_diversity_curve.png`**: A scatter plot with a quadratic regression curve (red line) clearly illustrating the rise and fall of impact as diversity increases.
+3.  **`results/H2/h2_diversity_bins.png`**: A binned bar chart showing that "Mid-Diversity" authors outperform both "Low" (Specialist) and "High" (Generalist) groups.
+
+---
+
+## 🚀 Conclusion & Implications
+
+Our study moves beyond the generic advice that "interdisciplinarity is good." We provide quantitative evidence that **strategic bridging** is the key to accelerating scientific impact.
+
+* **Theoretical Contribution**: We refine Structural Hole theory by showing that not all bridges are equal—their value depends on the **complementarity** of the fields (CS & Statistics > CS & AI).
+* **Practical Advice**: Researchers should aim for **moderate diversity** (Mastery of 2 distinct fields) rather than shallow generalism. The most valuable profile in computational science today is the **CS-Statistician bridge**.

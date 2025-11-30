@@ -1,0 +1,8 @@
+{
+    "hypothesis": "H2: Optimal Diversity (Inverted U-Shape)",
+    "is_supported": true,
+    "quadratic_term_coef": -0.7771460411660444,
+    "linear_term_coef": 1.641162198475881,
+    "peak_diversity": 1.0558904707366525,
+    "interpretation": "Significant negative quadratic term confirms diminishing returns."
+}

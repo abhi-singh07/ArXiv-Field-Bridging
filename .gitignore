@@ -208,3 +208,7 @@ __marimo__/
 
 # ArXiv data
 data/
+
+src/authors.parquet
+src/papers.parquet
+src/network_edges.parquet
