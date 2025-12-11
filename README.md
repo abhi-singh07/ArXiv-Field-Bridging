@@ -8,6 +8,8 @@ This project investigates which types of field bridges lead to higher research i
 
 **Research Question**: Do authors who bridge high-value field pairs achieve higher citation impact than specialists or those bridging unrelated areas?
 
+**Data Used**: https://drive.google.com/drive/folders/1ky_X5Bxs6lbaKQUJKVhCBoBjtEEAJI05?usp=sharing
+
 ## 👥 Team Members
 - Abhishek Singh (UIN: 136005114)
 - Joshua Vemana (UIN: 735007887)  
